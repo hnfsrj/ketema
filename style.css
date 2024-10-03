@@ -1,0 +1,110 @@
+
+*{
+    padding:0px;
+    margin:0px;
+}
+
+
+html{
+    font-size:10px;
+}
+
+:root{
+
+}
+
+
+.frost{}
+
+
+.section_title{}
+
+.description{}
+
+body{}
+
+
+#container{}
+
+
+    #landing{}
+
+        #landing .frost nav{}
+
+            #landing .frost nav p{}
+
+            .menu{}
+
+            .menu div{}
+        
+        #landing .frost > p:first-child{}
+
+        #landing .frost > p:nth-child(2){}
+
+        #landing .frost > p:last-child{}
+
+        #landing .frost > button{}
+
+        #landing .frost > img{}
+
+        .side{}
+
+    
+    #services{}
+
+        .service{}
+
+            .service > p:first-child{}
+
+            .service > p:last-child{}
+
+            .service > img{}
+
+
+        .nav_buttons{}
+
+            .left{}
+
+            .right{}
+
+    #about_me{}
+
+        .profile{}
+
+            .info{}
+
+                .info p:first-child{}
+
+                .info p:last-child{}
+
+            .profile_pic{}
+
+
+
+    
+    #expertise{}
+
+        .expertise_list{}
+
+            .expert{}
+
+                .expert>p:first-child{}
+
+                .expert>p:last-child{}
+
+
+    
+    #contact_me{}
+
+        #contact_me>p{}
+
+
+        #form{}
+
+            #form > input:not([type="submit"]){}
+
+            #form > textarea{}
+
+            #form > input[type="submit"]{}
+
+
