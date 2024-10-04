@@ -6,29 +6,6 @@
 
 
 
-@font-face {
-    font-family: 'inter';
-    src: url('/assets/fonts/inter/Inter-VariableFont_opsz\,wght.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'poppins';
-    src: url('/assets/fonts/poppins/Poppins-Regular.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@font-face {
-    font-family: 'cinzel';
-    src: url('/assets/fonts/cinzel/Cinzel-VariableFont_wght.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 
 html{
@@ -421,3 +398,18 @@ body{}
 
 
 
+@media (min-width:300px) and (max-width:400px){
+    html{
+        font-size:7px;
+    }
+
+    .menu{
+        width:19px;
+    }
+
+
+    .close{
+        width:16px;
+    }
+
+}
