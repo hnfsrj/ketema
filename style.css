@@ -219,6 +219,9 @@ body{}
                     height:165px;
                     background-color:var(--navy);
                     border-radius:20px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
                 }
 
                 .service_pic_1{
