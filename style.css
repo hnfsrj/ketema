@@ -52,7 +52,14 @@ html{
 }
 
 
-.section_title{}
+
+.section_title{
+    color:var(--navy);
+    font-size:3rem;
+    font-family:'poppins';
+    font-weight:bold;
+    margin-top:25px;
+}
 
 .description{}
 
@@ -176,20 +183,75 @@ body{}
     
     #services{}
 
-        .service{}
+        .the_services{
+            width:100%;
+            height:75%;
+            display:flex;
+            flex-wrap:nowrap;
+            overflow: scroll;
+            scroll-behavior: smooth;
+            margin-top:15%;
+        }
 
-            .service > p:first-child{}
+            .service{
+                flex-shrink: 0;
+                width:100%;
+            }
 
-            .service > p:last-child{}
+                .service > p:first-child{
+                    font-size:2rem;
+                    font-weight:bold;
+                    margin-bottom:5%;
+                }
 
-            .service > img{}
+                .service > p:last-child{
+                    font-size:1.6rem;
+                    font-weight:400;
+                    font-family: 'poppins';
+                    width:80%;
+                    margin:0 auto;
+                }
+
+                .service > div{
+                    width:95%;
+                    margin:0 auto;
+                    margin-bottom:8%;
+                    height:165px;
+                    background-color:var(--navy);
+                    border-radius:20px;
+                }
+
+                .service_pic_1{
+                    background-image:url('assets/pic.png');
+                }
+
+                .service_pic_2{
+                    background-image:url('assets/pic.png');
+                }
+
+                .service_pic_3{
+                    background-image:url('assets/pic.png');
+                }
 
 
-        .nav_buttons{}
+            .nav_buttons{
+                display: flex;
+                flex-wrap:nowrap;
+                justify-content: end;
+                align-items: center;                
+            }
 
-            .left{}
+                .nav_buttons>img{
+                    width:50px;
+                }
 
-            .right{}
+                .left{
+                    margin-right:10px;
+                }
+
+                .right{
+                    margin-right:40px;
+                }
 
     #about_me{}
 
