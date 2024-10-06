@@ -196,7 +196,7 @@ body{
             width:100%;
             display:flex;
             flex-wrap:nowrap;
-            overflow: scroll;
+            overflow: hidden;
             scroll-behavior: smooth;
             margin-top:15%;
         }
