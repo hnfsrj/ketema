@@ -44,6 +44,11 @@ html{
     font-weight:400px;
 }
 
+.hide{
+    display:none;
+}
+
+
 body{
     background:var(--lighter-gradient);
 }
@@ -107,12 +112,12 @@ body{
                 }
                 
                 .close{
-                    display:none;
+                    /* display:none; */
                     width:20px;
                 }
 
             .dropdown{
-                display:none;
+                /* display:none; */
                 position:absolute;
                 margin-top: 10px;
                 background:rgba(255,255,255,0.75);
