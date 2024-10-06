@@ -23,6 +23,7 @@ html{
 .frost{
     width:100%;
     height:100%;
+    min-height: 100vh;
     background:rgba(255,255,255,0.4);
     padding:30px 16px;
     box-sizing: border-box;
@@ -43,19 +44,23 @@ html{
     font-weight:400px;
 }
 
-body{}
+body{
+    background:var(--lighter-gradient);
+}
 
 
 #container{
     width:100vw;
     box-sizing: border-box;
-    /* overflow-x:hidden; */
+    min-width:300px;
+    max-width:1440px;
+    margin:0 auto;
 }
 
     section{
         box-sizing: border-box;
         background:var(--lighter-gradient);
-        min-height: 600px;
+        min-height: 100vh;
     }
 
     #landing{
@@ -199,15 +204,36 @@ body{}
             .service{
                 flex-shrink: 0;
                 width:100%;
+                /* display:flex; */
+                /* flex-wrap:wrap; */
+                /* flex-direction: column; */
+                /* justify-content: space-around; */
+                /* gap:15px; */
             }
 
-                .service > p:first-child{
-                    font-size:2rem;
-                    font-weight:bold;
-                    margin-bottom:5%;
+                .title_and_pic{
+                    width:100%;
                 }
 
-                .service > p:last-child{
+                .title_and_pic > p{
+                    font-size:2rem;
+                    font-weight:bold;
+                }
+
+                .title_and_pic > div{
+                    width:95%;
+                    aspect-ratio: 2/1;
+                    /* height:165px; */
+                    margin:8% auto 8% auto;
+                    /* margin-bottom:8%; */
+                    background-color:var(--navy);
+                    border-radius:20px;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                }
+
+                .service > p{
                     font-size:1.6rem;
                     font-weight:400;
                     font-family: 'poppins';
@@ -215,18 +241,7 @@ body{}
                     margin:0 auto;
                 }
 
-                .service > div{
-                    width:95%;
-                    aspect-ratio: 2/1;
-                    /* height:165px; */
-                    margin:0 auto;
-                    margin-bottom:8%;
-                    background-color:var(--navy);
-                    border-radius:20px;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center center;
-                }
+                
 
                 .service_pic_1{
                     background-image:url('assets/pic.png');
@@ -246,6 +261,7 @@ body{}
                 flex-wrap:nowrap;
                 justify-content: end;
                 align-items: center;
+                margin:0 auto;
                 margin-top:20px;
             }
 
@@ -258,7 +274,7 @@ body{}
                 }
 
                 .right{
-                    margin-right:40px;
+                    /* margin-right:40px; */
                 }
 
     #about_me{}
@@ -338,7 +354,7 @@ body{}
         padding:30px 16px;
         background:var(--navy);
         position:relative;
-        min-height:100vh;
+        /* min-height:100vh; */
     }
 
         .clouds{
@@ -425,7 +441,7 @@ body{}
 
     #landing{
         min-height: 600px;
-        background:green;
+        /* background:green; */
     }
 
         .menu{
@@ -459,11 +475,14 @@ body{}
             }
 
 
-    .service > p:last-child{
+    .service > p{
         font-size:1.7rem;
         width:85%;
     }
 
+        .nav_buttons{
+            width:95%;
+        }
 
         .nav_buttons>img{
             width:35px;
@@ -485,9 +504,9 @@ body{}
         font-size:2.2rem;
     }
 
-        .expert>p:last-child{
-            font-size:1.8rem;
-        }
+    .expert>p:last-child{
+        font-size:1.8rem;
+    }
 
 
     #form > input:not([type="submit"]){
@@ -509,25 +528,38 @@ body{}
 @media (min-width:401px) and (max-width:480px){
     #landing{
         min-height: 850px;
-        background:blue;
+        /* background:blue; */
     }
+
+    /* .title_and_pic{
+        background:yellow;
+    }
+
+    .nav_buttons{
+        background:red;
+    } */
 }
 
 
 
-@media (min-width:481px) and (max-width:570px){
+@media (min-width:481px){
     #landing{
         min-height: 850px;
-        background:yellow;
+        /* background:yellow; */
     }
 
     #landing .frost > button{
         font-size: 1.8rem;
     }
 
-    .service > div{
+
+    .title_and_pic > div{
         width:85%;
     }
+
+        .nav_buttons{
+            width:85%;
+        }
 
         .nav_buttons>img{
             width:35px;
@@ -570,24 +602,8 @@ body{}
 }
 
 
-@media (min-width:571px){
 
-    .expertise_list{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:space-between;
-    }
 
-        .expert{
-            flex: 0 0 45%;
-            margin-top:20px;
-        }
-
-        .expert>p:first-child{
-            margin-bottom:5px;
-        }
-
-}
 
 
 @media (min-width:650px){
@@ -643,14 +659,30 @@ body{}
 }
 
 
+
+
+
 @media (min-width:571px){
+
+
     .image{
         justify-content: end;
     }
-}
 
+    .expertise_list{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+    }
 
-@media (min-width:571px) and (max-width:900px){
+        .expert{
+            flex: 0 0 45%;
+            margin-top:20px;
+        }
+
+        .expert>p:first-child{
+            margin-bottom:5px;
+        }
 
     .frost{
         padding-left:8%;
@@ -664,7 +696,7 @@ body{}
 
 
     #landing{
-        background:red;
+        /* background:red; */
         min-height:900px;
     }
 
@@ -684,13 +716,17 @@ body{}
         margin-top:10%;
     }
 
-    .service > div{
+    .title_and_pic > div{
         width:85%;
     }
 
-    .nav_buttons>img{
-        width:40px;
+    .nav_buttons{
+        width:85%;
     }
+
+        .nav_buttons>img{
+            width:40px;
+        }
 
     
 
@@ -717,14 +753,14 @@ body{}
 
 
 
-@media (min-width:750px) and (max-width:900px){
+@media (min-width:750px){
 
     html{
         font-size: 10px;
     }
 
     #landing{
-        background:greenyellow;
+        /* background:greenyellow; */
     }
 
         .image > img{
@@ -739,16 +775,260 @@ body{}
         width:12%
     }
 
+    #expertise .description{
+        margin-top:5%;
+    }
+
+    #contact_me>p{
+        text-align: center;
+    }
+
+    #form{
+        width: 70%;
+    }
+    
+    #form > input:not([type="submit"]){
+        aspect-ratio:9.5/1;
+    }
+
+    #form > textarea{
+        aspect-ratio: 3.5/1;
+    }
+
+}
+
+
+
+
+@media (min-width:1001px){
+
+    .title_and_pic > div{
+        height:400px; /*same val*/
+    }
+    
+    .the_services{
+        min-height:400px; /*same val*/
+    }
+
+    .service{
+        box-sizing: border-box;
+        padding:0px 5%;
+    }
+
+    .title_and_pic{
+        position: relative;
+    }
+
+        .title_and_pic > p{
+            width:50%;
+        }
+        
+
+        .title_and_pic > div{
+            width:40%;
+            position:absolute;
+            top:0px;
+            right:0px;
+            margin:0px;
+        }
+
+
+        .service > p{
+            margin:2% 0px 0px 40px;
+            width:50%;
+        }
+
 }
 
 
 
 
 
+@media (min-width:1001px){
+
+    html{
+        font-size:11px;
+    }
+
+    #landing{
+        /* background:purple; */
+    }
+
+    #landing .frost>p:first-of-type{
+        width:50%;
+        margin-top:10%;
+        margin-bottom:7%;
+    }
+
+    #landing .frost > p:last-of-type{
+        margin-bottom:7%;
+    }
+
+    .side{
+        margin-top:15px;
+        margin-bottom:5px;
+    }
+
+    .image > img{
+        width:40%;
+    }
+
+    .dropdown{
+        gap:20px;
+    }
+
+    #landing .frost > button{
+        font-size:2rem;
+        width:30%;
+        aspect-ratio: 4.5/1;
+    }
+    
+    .the_services{
+        margin-top:5%;
+    }
+
+    .nav_buttons{
+        width:100%;
+        padding:0px 5%;
+        box-sizing: border-box;
+    }
+    
+    .profile_pic{
+        width:8%
+    }
+
+    .info{
+        margin-bottom:5px;
+        margin-left: 25px;
+    }
+
+    #form{
+        width: 60%;
+    }
+    
+    #form > input:not([type="submit"]){
+        aspect-ratio:10/1;
+    }
+
+    #form > textarea{
+        aspect-ratio: 4/1;
+    }
+            
+}
 
 
 
 
 
+@media (min-width:1201px){
 
+    html{
+        font-size:12px;
+    }
+
+    .frost{
+        padding-left:10%;
+        padding-right:10%;
+    }
+
+    #landing{
+        /* background:green; */
+    }
+
+    #landing .frost>p:first-of-type{
+        margin-top:9%;
+        margin-bottom:3%;
+    }
+
+    #landing .frost > p:last-of-type{
+        margin-bottom:3%;
+    }
+
+    .side{
+        margin-top:25px;
+        margin-bottom:15px;
+    }
+
+        #landing .frost > button{
+            font-size:1.8rem;
+            width:25%;
+            aspect-ratio: 4.8/1;
+        }
+
+    .title_and_pic > div{
+        height:450px; /*same val*/
+    }
+    
+    .the_services{
+        min-height:450px; /*same val*/
+    }
+    
+
+        .title_and_pic > div{
+            width:35%;
+        }
+
+        .nav_buttons{
+            width:100%;
+            padding:0px;
+        }
+
+
+        .service{
+            padding:0px;
+        }
+
+
+    .profile{
+        padding:0px 8%;
+        margin-bottom:7%;
+    }
+
+    #about_me .description{
+        padding:0px 8%;
+    }
+
+    .description{
+        line-height: 25px;
+    }
+
+    .expertise_list{
+        padding:0px 5%;
+    }
+
+        .expert{
+            margin-top:30px;
+        }
+
+            .expert>p:first-child{
+                font-size:1.8rem;
+            }
+
+            .expert>p:last-child{
+                font-size:1.4rem;
+            }
+
+
+        #form{
+            width: 45%;
+            margin-top:30px;
+        }
+        
+        #form > input:not([type="submit"]){
+            border:2px solid white;
+            margin-bottom:25px;
+            aspect-ratio:8.5/1;
+        }
+
+        #form > textarea{
+            aspect-ratio: 3/1;
+            border:2px solid white;
+        }
+
+        #form > input[type="submit"]{
+            font-size:2.2rem;
+            aspect-ratio: 4.7/1;
+        }
+
+}
 
