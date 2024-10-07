@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Cinzel:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Ketema</title>
+    <script defer src="main.js"></script>
 </head>
 <body>
     
@@ -19,11 +20,11 @@
             <div class="frost">
                 
                 <div class="side">
-                    <img src="assets/facebook.svg"/>
-                    <img src="assets/youtube.svg"/>
-                    <img src="assets/linkedin.svg"/>
-                    <img src="assets/instagram.svg"/>
-                    <img src="assets/x.svg"/>
+                    <img class="hover_effect" src="assets/facebook.svg"/>
+                    <img class="hover_effect" src="assets/youtube.svg"/>
+                    <img class="hover_effect" src="assets/linkedin.svg"/>
+                    <img class="hover_effect" src="assets/instagram.svg"/>
+                    <img class="hover_effect" src="assets/x.svg"/>
                 </div>
 
                 <nav id="nav">
@@ -37,10 +38,10 @@
                     </div>
 
                     <div class="dropdown hide">
-                        <p>Services</p>
-                        <p>About</p>
-                        <p>Expertise</p>
-                        <p>Contact</p>
+                        <a href="#services"><p>Services</p></a>
+                        <a href="#about_me"><p>About</p></a>
+                        <a href="#expertise"><p>Expertise</p></a>
+                        <a href="#contact_me"><p>Contact</p></a>
                     </div>
                 </nav>
 
@@ -48,7 +49,7 @@
 
                 <p>Let me help you turn your dreams into reality.</p>
 
-                <button>Book a Consultation</button>
+                <button class="hover_effect">Book a Consultation</button>
 
                 <div class="image">
                     <p>Let's Begin!</p>
@@ -223,13 +224,12 @@
 
                 <textarea placeholder="Message"></textarea>
 
-                <input type="submit" value="Send"/>
+                <input class="hover_effect" type="submit" value="Send"/>
 
             </form>
         </section>
 
     </div>
 
-    <script src="main.js"></script>
 </body>
 </html>
