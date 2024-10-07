@@ -16,8 +16,8 @@ html{
 
 :root{
     --navy:#1D2F48;
-    --gradient:linear-gradient(to right, #1B222C, #1E457E);;
-    --lighter-gradient:linear-gradient(100deg, #7BB1EE, #FFFFFF);;
+    --gradient:linear-gradient(to right, #1B222C, #1E457E);
+    --lighter-gradient:linear-gradient(100deg, #7BB1EE, #FFFFFF);
 }
 
 
@@ -42,7 +42,7 @@ html{
 
 .description{
     font-size:1.6rem;
-    font-weight:400px;
+    font-weight:400;
 }
 
 .hide{
