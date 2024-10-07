@@ -12,8 +12,16 @@ let subject = document.querySelector("#form>input[name='subject']");
 let services = document.querySelectorAll(".service");
 
 
-let position = 0;
+
+const scrollPosition = window.scrollY;
 services[0].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+window.scrollTo(0, scrollPosition);
+
+
+let position = 0;
+
+
+
 
 container.addEventListener('click',function(e){
     console.log(e.target);
