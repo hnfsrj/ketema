@@ -127,7 +127,6 @@ body{
                 -webkit-box-align: center;
                     -ms-flex-align: center;
                         align-items: center;
-                /* padding:10px 0px; */
             }
 
                 .main_nav p{
@@ -140,12 +139,10 @@ body{
                 }
                 
                 .close{
-                    /* display:none; */
                     width:20px;
                 }
 
             .dropdown{
-                /* display:none; */
                 position:absolute;
                 margin-top: 10px;
                 background:rgba(255,255,255,0.75);
@@ -163,7 +160,6 @@ body{
             }
 
                 .dropdown a p{
-                    /* background:orange; */
                     padding:5px 10px;
                     border-radius:10px;
                     -webkit-box-sizing: border-box;
@@ -212,8 +208,6 @@ body{
             font-weight:bold;
             background:var(--gradient);
             width:50%;
-            /* width:189px; */
-            /* height:48px; */
             aspect-ratio: 4/1;
             outline:none;
             border:none;
@@ -260,16 +254,11 @@ body{
             }
 
             .image > img{
-                /* width:250px; */
                 width:55%;
             }
         
         
 
-        
-
-    
-    #services{}
 
         .the_services{
             width:100%;
@@ -279,7 +268,6 @@ body{
             -ms-flex-wrap:nowrap;
                 flex-wrap:nowrap;
             overflow: hidden;
-            /* scroll-behavior: smooth; */
             margin-top:15%;
         }
 
@@ -287,11 +275,6 @@ body{
                 -ms-flex-negative: 0;
                     flex-shrink: 0;
                 width:100%;
-                /* display:flex; */
-                /* flex-wrap:wrap; */
-                /* flex-direction: column; */
-                /* justify-content: space-around; */
-                /* gap:15px; */
             }
 
                 .title_and_pic{
@@ -306,9 +289,7 @@ body{
                 .title_and_pic > div{
                     width:95%;
                     aspect-ratio: 2/1;
-                    /* height:165px; */
                     margin:8% auto 8% auto;
-                    /* margin-bottom:8%; */
                     background-color:var(--navy);
                     border-radius:20px;
                     background-size: cover;
@@ -374,11 +355,7 @@ body{
                     margin-right:10px;
                 }
 
-                .right{
-                    /* margin-right:40px; */
-                }
 
-    #about_me{}
 
         .profile{
             display:-webkit-box;
@@ -417,7 +394,6 @@ body{
                 background-repeat: no-repeat;
                 background-position: 45% 65%;
                 background-size: 150%;
-                /* width: 150px; */
                 width: 40%;
                 aspect-ratio: 1/1;
                 outline:none;
@@ -431,8 +407,6 @@ body{
 
 
     
-    #expertise{}
-
         #expertise .description{
             margin-top:8%;
         }
@@ -462,7 +436,6 @@ body{
         padding:30px 16px;
         background:var(--navy);
         position:relative;
-        /* min-height:100vh; */
     }
 
         .clouds{
@@ -471,7 +444,6 @@ body{
             left:0px;
             width:100%;
 
-            /* try blending mnamn or demo glassy with transsform up */
         }
 
         #contact_me>p{
@@ -491,7 +463,6 @@ body{
 
             #form > input:not([type="submit"]){
                 width: 100%;
-                /* padding:20px 15px; */
                 padding:0px 15px;
                 aspect-ratio:6.5/1;
                 outline:none;
@@ -507,7 +478,6 @@ body{
 
             #form > textarea{
                 width: 100%;
-                /* height:120px; */
                 aspect-ratio: 2/1;
                 padding:20px 15px;
                 outline:none;
@@ -526,8 +496,6 @@ body{
                 color:var(--navy);
                 font-size:3rem;
                 font-weight:600;
-                /* width:298px; */
-                /* height:66px; */
                 width:80%;
                 aspect-ratio: 5/1;
                 outline:none;
@@ -551,7 +519,6 @@ body{
 
     #landing{
         min-height: 600px;
-        /* background:green; */
     }
 
         .menu{
@@ -638,16 +605,8 @@ body{
 @media (min-width:401px) and (max-width:480px){
     #landing{
         min-height: 850px;
-        /* background:blue; */
     }
 
-    /* .title_and_pic{
-        background:yellow;
-    }
-
-    .nav_buttons{
-        background:red;
-    } */
 }
 
 
@@ -655,7 +614,6 @@ body{
 @media (min-width:481px){
     #landing{
         min-height: 850px;
-        /* background:yellow; */
     }
 
     #landing .frost > button{
@@ -846,7 +804,6 @@ body{
 
 
     #landing{
-        /* background:red; */
         min-height:900px;
     }
 
@@ -909,9 +866,6 @@ body{
         font-size: 10px;
     }
 
-    #landing{
-        /* background:greenyellow; */
-    }
 
         .image > img{
             width:45%;
@@ -1001,9 +955,6 @@ body{
         font-size:11px;
     }
 
-    #landing{
-        /* background:purple; */
-    }
 
     #landing .frost>p:first-of-type{
         width:50%;
@@ -1083,9 +1034,6 @@ body{
         padding-right:10%;
     }
 
-    #landing{
-        /* background:green; */
-    }
 
     #landing .frost>p:first-of-type{
         margin-top:9%;
