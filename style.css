@@ -312,15 +312,15 @@ body{
                 
 
                 .service_pic_1{
-                    background-image:url('assets/pic.png');
+                    background-image:url('assets/pic1.webp');
                 }
 
                 .service_pic_2{
-                    background-image:url('assets/pic.png');
+                    background-image:url('assets/pic2.webp');
                 }
 
                 .service_pic_3{
-                    background-image:url('assets/pic.png');
+                    background-image:url('assets/pic3.webp');
                 }
 
 
@@ -393,7 +393,7 @@ body{
 
             .profile_pic{
                 background-color: var(--navy);
-                background-image:url('assets/ketema2.png');
+                background-image:url('assets/ketema2.webp');
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: 45% 65%;
