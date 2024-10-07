@@ -11,7 +11,7 @@ let right = document.querySelector(".right");
 let subject = document.querySelector("#form>input[name='subject']");
 let services = document.querySelectorAll(".service");
 let form = document.querySelector("#form");
-
+let the_service = document.querySelector(".the_services");
 
 
 const scrollPosition = window.scrollY;
@@ -23,9 +23,21 @@ let position = 0;
 
 
 
+function service_in_view(){
+
+    for (let index = 0; index < 3; index++){
+        let val = services[index];
+
+        if (Math.trunc(val.getBoundingClientRect().left) == Math.trunc(the_service.getBoundingClientRect().left)){
+            return index;
+        }
+    };
+
+}
+
 
 container.addEventListener('click',function(e){
-    console.log(e.target);
+
     if(e.target == menu){
         menu.classList.add('hide');
         closer.classList.remove('hide');
@@ -42,19 +54,22 @@ container.addEventListener('click',function(e){
 
     }else if(e.target == left){
 
-        if (position > 0){
-            services[position-1].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-            position -= 1;
+        let in_view = service_in_view();
+
+        if (in_view > 0){
+
+            services[in_view-1].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
         }
 
         
     }else if(e.target == right){
 
-        if (position < 2){
-            services[position+1].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-            position += 1;
-        }
+        let in_view = service_in_view();
 
+        if (in_view < 2){
+
+            services[in_view+1].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+        }
     }
 
 });

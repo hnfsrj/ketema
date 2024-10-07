@@ -269,12 +269,16 @@ body{
                 flex-wrap:nowrap;
             overflow: hidden;
             margin-top:15%;
+            -ms-scroll-snap-type: x mandatory;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
         }
 
             .service{
                 -ms-flex-negative: 0;
                     flex-shrink: 0;
                 width:100%;
+                scroll-snap-align: start;
             }
 
                 .title_and_pic{
