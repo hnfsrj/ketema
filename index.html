@@ -215,14 +215,14 @@
 
             <p>Contact Me</p>
 
-            <form id="form">
-                <input type="text" required placeholder="Name"/>
+            <form id="form" action="https://formsubmit.co/your@email.here" method="POST">
+                <input type="text" required name="name" placeholder="Name"/>
 
-                <input type="email" required placeholder="Email"/>
+                <input type="email" required name="email" placeholder="Email"/>
 
-                <input type="text" required placeholder="Subject"/>
+                <input type="text" required name="subject" placeholder="Subject"/>
 
-                <textarea placeholder="Message"></textarea>
+                <textarea name="message" required placeholder="Message"></textarea>
 
                 <input class="hover_effect" type="submit" value="Send"/>
 
