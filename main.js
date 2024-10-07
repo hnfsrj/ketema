@@ -10,6 +10,7 @@ let left = document.querySelector(".left");
 let right = document.querySelector(".right");
 let subject = document.querySelector("#form>input[name='subject']");
 let services = document.querySelectorAll(".service");
+let form = document.querySelector("#form");
 
 
 
@@ -37,7 +38,8 @@ container.addEventListener('click',function(e){
     
     }else if(e.target == book){
         subject.value = "Consultation";
-        window.location.hash = 'contact_me';
+        form.scrollIntoView({ behavior: 'smooth'});
+
     }else if(e.target == left){
 
         if (position > 0){
