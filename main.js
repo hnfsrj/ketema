@@ -28,7 +28,7 @@ function service_in_view(){
     for (let index = 0; index < 3; index++){
         let val = services[index];
 
-        if (Math.trunc(val.getBoundingClientRect().left) == Math.trunc(the_service.getBoundingClientRect().left)){
+        if (Math.trunc(val.getBoundingClientRect().left) >= Math.trunc(the_service.getBoundingClientRect().left)){
             return index;
         }
     };
